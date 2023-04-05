@@ -15,8 +15,8 @@ def test_one():
     assert actual == expected
 
 def test_two():
-    actual=fibonacci(2)
-    expected=1
+    actual=fibonacci(4)
+    expected=3
     assert actual == expected
 
 def test2_0():
@@ -48,3 +48,4 @@ def test3_two():
     actual=sum_series(3)
     expected=2
     assert actual == expected
+
