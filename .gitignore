@@ -1,3 +1,5 @@
+__pycache__
+
 # Logs
 logs
 *.log
@@ -103,4 +105,3 @@ dist
 # TernJS port file
 .tern-port
 .venv 
-__pycache__
