@@ -28,7 +28,7 @@ def lucas(n):
         return 1
     return lucas(n-2) + lucas(n-1)
 
-def sum_series(n,c0=0,c1=1):
+def sum_series(n, x=0 , y=1):
     
     """Return the nth value in a series determined by the starting values c0 and c1.
     Parameters:
@@ -40,16 +40,14 @@ def sum_series(n,c0=0,c1=1):
     int: The nth value in the specified series.
     """
    
-    if (c0==0 and c1==1):
-        return fibonacci(n)
-    elif (c0==2 and c1==1):
-        return lucas(n)
-       
-    elif n == 0:
-        return c0
-    elif n == 1:
-        return c1
-    else:
-        return sum_series(n-2, c0, c1) + sum_series(n-1, c0, c1)
+    if (x==0 and y==1):         
+       return fibonacci(n)      
+    elif (x==2 and y==1) :        
+       return lucas(n)      
+    else :         
+       if (n==0 or n==1) :             
+           return n         
+       else:          
+           return sum_series(n-1 , x , y)+ sum_series(n-2 , x , y)
        
 

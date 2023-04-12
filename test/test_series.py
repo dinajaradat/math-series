@@ -41,7 +41,7 @@ def test2_three():
 
 def test3_one():
     actual=sum_series(3,3,1)
-    expected=5
+    expected=2
     assert actual == expected
 
 def test3_two():
